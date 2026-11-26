@@ -1,0 +1,87 @@
+# ==============================================================================
+# Green Factory Brain AI — Git Ignore Configuration
+# ==============================================================================
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Node dependencies & package managers
+node_modules/
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime logs, process outputs & tunnel states
+*.log
+logs/
+cloudflared.log
+cloudflared_active.log
+active_tunnel_url.txt
+
+# Testing artifacts, coverage & scratch scripts
+test_artifacts/
+coverage/
+.nyc_output/
+scratch/
+.system_generated/
+
+# Build & deployment outputs
+dist/
+build/
+.output/
+.cache/
+.netlify/
+.vercel/
+
+# Compressed distribution archives
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# Local media captures
+WhatsApp Image*
+WhatsApp Video*
+
+# Editor & IDE configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary & backup files
+*.bak
+*.tmp
+*~
+# Agent working notes (never ship in the public repo)
+.agents/
+
+# Python runtime & test artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
